@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".AdminLogin">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_pb"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/img"
+        android:alpha="0.3"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon"/>
+
+    <TextView
+        android:id="@+id/title_header"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#57CC99"
+        android:fontFamily="@font/myfont"
+        android:letterSpacing="0.1"
+        android:text="Admin"
+        android:gravity="center_horizontal" />
+
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/admin_login_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/myfont"
+            android:textColor="#57CC99"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_email"
+            android:background="@drawable/stroke_green"
+            android:hint="Username"/>
+
+
+        <EditText
+            android:id="@+id/admin_login_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:drawablePadding="10dp"
+            android:padding="10dp"
+            android:fontFamily="@font/myfont"
+            android:layout_marginTop="20dp"
+            android:textColor="#57CC99"
+            android:textSize="12sp"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock"
+            android:background="@drawable/stroke_green"
+            android:hint="Password"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15sp"
+            app:backgroundTint="@null"
+            android:letterSpacing="0.2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/myfont"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:onClick="AdminLoginClicked"
+            android:background="@drawable/button_background"
+            android:text="Login"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progress_bar"/>
+
+</RelativeLayout>

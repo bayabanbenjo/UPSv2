@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UPS</string>
+
+    <string name="facebook_app_id">713781403212593</string>
+    <string name="fb_login_protocol_scheme">fb713781403212593</string>
+    <string name="facebook_client_token">4e1ef6952f8c1448a782ede3c4744153</string>
+
+
+</resources>

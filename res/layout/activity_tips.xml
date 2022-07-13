@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tips">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#519259"
+            android:padding="10dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/myfont"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                 android:layout_centerHorizontal="true"
+                 android:text="Tips and Ideas"/>
+
+            <ImageView
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:src="@drawable/ic_back"
+              android:onClick="Back"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="No Space"
+                    android:onClick="NoSpace"
+                    tools:ignore="MissingPrefix" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/nospace">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/nosp"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text=" No Space, No Problem: Not everyone has a backyard, roof or balcony. To overcome this issue, start a container garden. While decorative pots can be lovely, they don't improve the quality of your plants and can be expensive. Instead, you can use a large bucket from a garden store, which is a low-cost and effective option. Or upcycle containers not in use, such as crates, old toys or paint cans."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="PlantSelect"
+                    android:text="Plant Selection"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/plantselect">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/plantselect"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text=" Plant Selection: There are vegetable, flower and herb varieties that are easy to grow in urban spaces. When planning your garden, think about what to plant – shallow-rooted veggies, such as herbs, lettuce and radishes typically do better in confined spaces."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="Village"
+                    android:text="It Takes a Village"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/village">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/vil"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text=" It Takes a Village: In addition to establishing your own garden, another way to plant is by getting involved with community gardens. Each year, Nature's Path Food's Gardens for Good program supports community gardens that make fresh, organic food more accessible in local neighborhoods."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="PlantRight"
+                    android:text="Plant Right"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/plantryt">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/plantryt"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text="Plant Right: Potting your plants takes a few simple steps. Put some gravel in the bottom of your container to help with drainage and fill with soil, tamping it a bit. Leave 1 inch at the top for watering. Tamp the soil after the plants are in place and water gently."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="Portable"
+                    android:text="Portable Planters"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/portable">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/portable"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text=" Portable Planters: An advantage of container gardens is that they allow you to easily move them in and out of the sun. If your plants seem to dry out in one window area, you can try different areas to adjust to what works best."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="Drain"
+                    android:text="Drain Gain"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/drain">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/drain"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text="  Drain Gain: Whatever container you choose for your garden, remember drainage holes are essential. Without proper drainage, soil can become waterlogged and plants may die. The holes need to be large enough to allow excess water to drain out."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="Water"
+                    android:text="Water Wise"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/water">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/waterwise"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text="  Water Wise: Hand water every morning. Once the plants are large and summer is hot, they will probably need watering in the evening, too. A little afternoon shade can keep them from drying out too quickly."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="Soil"
+                    android:text="Soil Smart"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/soil">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/solid"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text="  Soil Smart: A common mistake urban gardeners make is not making sure their soil is good quality. While those made with pesticides promise great results, they are loaded with chemicals. Go for organic soil and grow well from the beginning."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="GrowUp"
+                    android:text="Grow Up"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/growup">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/growup"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text="  Grow Up: Small spaces make it ideal to grow vertically, which means planting tall plants like squash, cucumbers, beans and tomatoes."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:background="@drawable/stroke_green"
+                    app:backgroundTint="@null"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/myfont"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:onClick="Fun"
+                    android:text="Have Fun"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:id="@+id/havefun">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:src="@drawable/fun"
+                        android:scaleType="centerCrop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/myfont"
+                        android:textAlignment="textStart"
+                        android:text="  Have Fun: Gardening not only results in food or flowers, it is a great way to relieve stress, have fun and get in touch with nature. Just because you live in an apartment doesn't mean you can't experience the joy of eating what you grow."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+    </LinearLayout>
+  
+   
+
+
+</RelativeLayout>
